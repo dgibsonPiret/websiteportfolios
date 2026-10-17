@@ -39,6 +39,24 @@
 
 
 .resume-page{max-width:var(--max,1120px);margin:0 auto;padding:54px 5vw 110px;min-height:62vh}.resume-card{position:relative;max-width:760px;margin:0 auto;padding:clamp(30px,7vw,78px);background:var(--card);border:1px solid var(--line);border-radius:4px}.resume-card .project-detail-back-top{position:static;margin:0 0 78px}.resume-eyebrow{font:11px var(--mono);letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:18px}.resume-title{font:600 clamp(42px,7vw,72px)/1 var(--serif);letter-spacing:-.045em;margin:0 0 18px}.resume-description{max-width:480px;font-size:16px;line-height:1.75;color:var(--muted);margin:0 0 30px}.resume-link{display:inline-flex;align-items:center;gap:10px;padding:14px 19px;border-radius:3px;background:var(--ink);color:var(--paper);text-decoration:none;font:12px var(--mono);letter-spacing:.06em;text-transform:uppercase;transition:transform .2s ease,opacity .2s ease}.resume-link:hover{transform:translateY(-2px);opacity:.88}.resume-empty{font:12px var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin:22px 0 0}.resume-empty[hidden]{display:none}@media(max-width:640px){.resume-page{padding-top:30px}.resume-card{padding:26px}.resume-card .project-detail-back-top{margin-bottom:54px}}
+
+/* phone fixes */
+@media(max-width:700px){
+.topbar{gap:10px}
+.brand{font-size:18px;white-space:nowrap}
+.topnav{gap:13px;font-size:12px}
+.topnav a:not(.edit-open){display:inline-block}
+.page-image-frame{left:0!important;top:0!important;max-width:100%!important}
+#info .page-image-frame{width:100%!important}
+.project-canvas{overflow-x:hidden}
+.project-content-sections{grid-template-columns:minmax(0,1fr)}
+.project-content-sections>*{min-width:0}
+#main{position:relative}
+.work-art .art-title{font-size:34px;max-width:82%}
+.hero{padding-top:128px}
+#main>.page-image-frame:has(img){position:absolute!important;top:16px!important;right:21px!important;left:auto!important;width:104px!important;margin:0!important;z-index:2}
+#main>.page-image-frame:not(:has(img)):not(:has(.achievement-card)){display:none!important}
+}
 </style>
 </head>
 <body>
